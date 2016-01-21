@@ -1,7 +1,9 @@
-class Machine 
-    def insert coin
+class Machine
+    attr_reader :display
+    def initialize
+      @display = 'INSERT COIN'
     end
-    def display
-        '5 cents'
+    def insert coin
+      @display = '5 cents'
     end
 end
